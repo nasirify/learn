@@ -9,6 +9,9 @@ let example2: any = true;          // any will bypass TS functionality
     example2      = "Any string";  // NO ERR now!
 
 //  avoid using any at anyCost!!!!       and also never is used rarely
+
+let example3: unknown;
+
 //  unknown is a similar, but safer alternative to any.    TS prevents
 //  unknown types from being used.   you will cast it before using  it
 //  we talk about casting in the next topics <3

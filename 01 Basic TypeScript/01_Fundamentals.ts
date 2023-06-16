@@ -1,4 +1,4 @@
-//  What is TypeScript? 
+//  What is TypeScript?  --------------------------------------------- 
 //  it is simply JavaScript with Added static types :)  very simple :)
 
 let javaScript          = "Hello World!";
@@ -15,3 +15,12 @@ typeScript=25;  //err: Type 'number' is not assignable to type 'string'
 //                we did above in javaScript
 //  explicit  ->  we tell TS what the type is by writing down like  we
 //                did in typeScript above
+
+/*  TypeScript Compiler  --------------------------------------------- 
+    TypeScript has an official compiler that can be installed with npm
+    TypeScript will be compiled to normal JavaScript and its   purpose
+    is to help developers write better code and at the end it'll be JS
+    We can install the compiler:     npm install typescript --save-dev
+    and also run it to give a config file:              npx tsc --init
+*/
+
