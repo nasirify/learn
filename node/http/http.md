@@ -38,7 +38,7 @@ const server = http.createServer((req, res) => {
 });
 ```
 
-### HTML Response
+## HTML Response
 
 we can also return html to the user:
 
@@ -53,3 +53,21 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 ```
+
+### Send HTML as response
+
+```js
+const server = http.createServer((req, res) => {
+  res.setHeader("Content-Type", "text/html");
+
+  fs.readFile("./index.html", (err, data) => {
+    if (err) console.log(err);
+    if (!err) {
+      res.write(data);
+      res.end();
+    }
+  });
+});
+```
+
+_we can also only use `res.end(data)`_
